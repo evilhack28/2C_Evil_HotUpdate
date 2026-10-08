@@ -1,0 +1,582 @@
+{
+  "#comment": "Memory",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[PLAYERS_TRIP_TO_MEMORY]",
+        "LevelNumber": 2,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(DoNotPlantBeforeLine@CurrentLevel)",
+          "RTID(FastSpeed@CurrentLevel)",
+          "RTID(TimeEnergy@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(ManholePipeline@CurrentLevel)",
+          "RTID(InitialPlants@CurrentLevel)",
+          "RTID(SteamMowers@LevelModules)"
+        ],
+        "MusicType": "",
+        "Name": "[S32_MEMORY_LEVEL_NAME_047]",
+        "DisablePeavine": true,
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "StageModule": "RTID(SteamStage@LevelModules)",
+                "ShowZombies": []
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "OverrideSeedSlotsCount": 8,
+        "PlantBlackList": [],
+        "PlantWhiteList": [],
+        "PresetPlantList": [
+          "goldbloom",
+          "flattenedshroom"
+        ],
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+            "objclass": "TimeEnergyModuleProperties",
+            "aliases": [
+                "TimeEnergy"
+            ],
+            "objdata": {
+                "TimeEnergyValueMax": 450
+            }
+        },
+    {
+      "aliases": [
+        "DoNotPlantBeforeLine"
+      ],
+      "objclass": "MoldColonyChallengeProps",
+      "objdata": {
+        "Description": "",
+        "Locations": "RTID(Mold@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Mold"
+      ],
+      "objclass": "BoardGridMapProps",
+      "objdata": {
+        "Values": [
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "FastSpeed"
+      ],
+      "objclass": "ZombieMoveFastModuleProperties",
+      "objdata": {
+        "SpeedUp": 2.0,
+        "StopColumn": 8
+      }
+    },
+    {
+      "aliases": [
+        "InitialPlants"
+      ],
+      "objclass": "InitialPlantEntryProperties",
+      "objdata": {
+        "Plants": [
+          {
+            "Avatar": false,
+            "GridX": 2,
+            "GridY": 2,
+            "Level": 1,
+            "PlantTypes": [
+              "flattenedshroom"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(ZombieDistance@CurrentLevel)",
+            "RTID(SunProduced@CurrentLevel)",
+            "RTID(SaveMowers@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "SaveMowers"
+      ],
+      "objclass": "StarChallengeSaveMowersProps",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "ZombieDistance"
+      ],
+      "objclass": "StarChallengeZombieDistanceProps",
+      "objdata": {
+        "TargetDistance": 4.5
+      }
+    },
+    {
+      "aliases": [
+        "SunProduced"
+      ],
+      "objclass": "StarChallengeSunProducedProps",
+      "objdata": {
+        "TargetSun": 2000
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerPropsWeek1"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 5,
+        "MaxNextWaveHealthPercentage": 0.85,
+        "MinNextWaveHealthPercentage": 0.7,
+        "DescriptionName": "[PVZ1MODE_PEACE]",
+	"Description": "[PVZ1MODE_PEACE_NORMAL_DESC]",
+        "WaveCount": 10,
+        "Waves": [
+          [
+            "RTID(Wave1Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10Jittered0@CurrentLevel)"
+          ]
+        ],
+        "ZombieCountDownFirstWaveConveyorSecs": 5,
+        "ZombieCountDownFirstWaveSecs": 12,
+        "ZombieCountDownHugeWaveDelay": 5
+      }
+    },
+    {
+      "aliases": [
+        "Wave1Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_worker@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_coal_miner@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_armor4@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_coal_miner@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(steam_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_coal_miner@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_coal_miner@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(steam_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(steam_coal_miner@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(steam_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_coal_miner@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(steam_armor4@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(steam_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_coal_miner@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(steam_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(steam_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(steam_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(uncharted_gentleman@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(steam_coal_miner@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ManholePipeline"
+      ],
+      "objclass": "ManholePipelineModuleProperties",
+      "objdata": {
+        "DamagePerSecond": 50,
+        "OperationTimePerGrid": 1.5,
+        "PipelineList": [
+          {
+            "EndX": 2,
+            "EndY": 1,
+            "StartX": 6,
+            "StartY": 1
+          },
+          {
+            "EndX": 2,
+            "EndY": 3,
+            "StartX": 6,
+            "StartY": 3
+          },
+          {
+            "EndX": 2,
+            "EndY": 4,
+            "StartX": 6,
+            "StartY": 4
+          },
+          {
+            "EndX": 2,
+            "EndY": 0,
+            "StartX": 6,
+            "StartY": 0
+          },
+          {
+            "EndX": 2,
+            "EndY": 2,
+            "StartX": 6,
+            "StartY": 2
+          }
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

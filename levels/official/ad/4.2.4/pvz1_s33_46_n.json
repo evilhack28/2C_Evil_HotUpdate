@@ -1,0 +1,793 @@
+{
+  "#comment": "Memory",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[PLAYERS_TRIP_TO_MEMORY]",
+        "LevelNumber": 2,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(TunnelDefend@CurrentLevel)",
+          "RTID(GridItemPlacement@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(MausoleumMowers@LevelModules)",
+          "RTID(TimeEnergy@CurrentLevel)",
+          "RTID(FastSpeed@CurrentLevel)",
+          "RTID(FrozenPlantPlacement@CurrentLevel)"
+        ],
+        "MusicType": "Minigame_A",
+        "StageModule": "RTID(UnchartedMausoleumStage@LevelModules)",
+        "StartingSun": 2500,
+        "IsArtifactDisabled": true,
+        "Name": "[S32_MEMORY_LEVEL_NAME_046]",
+        "DisablePeavine": true,
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "ShowZombies": []
+      }
+    },
+    {
+            "objclass": "TimeEnergyModuleProperties",
+            "aliases": [
+                "TimeEnergy"
+            ],
+            "objdata": {
+                "TimeEnergyValueMax": 450
+            }
+        },
+      {
+      "aliases": [
+        "TunnelDefend"
+      ],
+      "objclass": "TunnelDefendModuleProperties",
+      "objdata": {
+        "Roads": [
+          {
+            "GridX": 0,
+            "GridY": 0,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 0,
+            "GridY": 1,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 0,
+            "GridY": 2,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 0,
+            "GridY": 3,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 0,
+            "GridY": 4,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 1,
+            "GridY": 0,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 1,
+            "GridY": 1,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 1,
+            "GridY": 2,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 1,
+            "GridY": 3,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 1,
+            "GridY": 4,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 2,
+            "GridY": 0,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 2,
+            "GridY": 1,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 2,
+            "GridY": 2,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 2,
+            "GridY": 3,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 2,
+            "GridY": 4,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 3,
+            "GridY": 0,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 3,
+            "GridY": 2,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 3,
+            "GridY": 3,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 3,
+            "GridY": 4,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 4,
+            "GridY": 0,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 4,
+            "GridY": 3,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 4,
+            "GridY": 4,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 5,
+            "GridY": 0,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 5,
+            "GridY": 1,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 5,
+            "GridY": 2,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 5,
+            "GridY": 3,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 5,
+            "GridY": 4,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 6,
+            "GridY": 0,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 6,
+            "GridY": 1,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 6,
+            "GridY": 2,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 6,
+            "GridY": 3,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 6,
+            "GridY": 4,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 7,
+            "GridY": 0,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 7,
+            "GridY": 1,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 7,
+            "GridY": 2,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 7,
+            "GridY": 3,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 7,
+            "GridY": 4,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 8,
+            "GridY": 0,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 8,
+            "GridY": 1,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 8,
+            "GridY": 2,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 8,
+            "GridY": 3,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          },
+          {
+            "GridX": 8,
+            "GridY": 4,
+            "Img": "IMAGE_UI_MAUSOLEUM_TUNNEL_LEFT"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "FastSpeed"
+      ],
+      "objclass": "ZombieMoveFastModuleProperties",
+      "objdata": {
+        "SpeedUp": 2.0,
+        "StopColumn": 8
+      }
+    },
+    {
+      "aliases": [
+        "GridItemPlacement"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 6,
+            "GridY": 0,
+            "TypeName": "terracottaArmy"
+          },
+          {
+            "GridX": 6,
+            "GridY": 2,
+            "TypeName": "terracottaArmy"
+          },
+          {
+            "GridX": 6,
+            "GridY": 4,
+            "TypeName": "terracottaArmy"
+          }
+        ]
+      }
+    },
+     {
+      "aliases": [
+        "FrozenPlantPlacement"
+      ],
+      "objclass": "InitialPlantProperties",
+      "objdata": {
+        "InitialPlantPlacements": [
+          {
+            "GridX": 3,
+            "GridY": 3,
+            "Level": 1,
+            "TypeName": "uncharted_haystack"
+          },
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "Level": 1,
+            "TypeName": "uncharted_haystack"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "Level": 1,
+            "TypeName": "uncharted_haystack"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "Level": 1,
+            "TypeName": "doomshroom"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "OverrideSeedSlotsCount": 8,
+        "PlantBlackList": [],
+        "PlantWhiteList": [],
+        "PresetPlantList": [
+          "uncharted_haystack",
+          "imitater",
+          "doomshroom",
+          "hollyknight"
+        ],
+        "SelectionMethod": "preset"
+      }
+    },
+    {
+      "aliases": [
+        "FastSpeed"
+      ],
+      "objclass": "ZombieMoveFastModuleProperties",
+      "objdata": {
+        "SpeedUp": 2.0,
+        "StopColumn": 8
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(ApplyZombieConditionsChallenge@CurrentLevel)",
+            "RTID(SunUsed@CurrentLevel)",
+            "RTID(SpendSunHoldout@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "SunUsed"
+      ],
+      "objclass": "StarChallengeSunUsedProps",
+      "objdata": {
+        "MaximumSun": 2000
+      }
+    },
+    {
+      "aliases": [
+        "SpendSunHoldout"
+      ],
+      "objclass": "StarChallengeSpendSunHoldoutProps",
+      "objdata": {
+        "HoldoutSeconds": 10
+      }
+    },
+    {
+      "aliases": [
+        "ApplyZombieConditionsChallenge"
+      ],
+      "objclass": "ApplyZombieConditionsChallengeProps",
+      "objdata": {
+        "ConditionToInflict": [],
+        "IncludeBurnedToAsh": true,
+        "NumZombieConditionsToApply": 30
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerPropsWeek1"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 5,
+        "MaxNextWaveHealthPercentage": 0.85,
+        "MinNextWaveHealthPercentage": 0.7,
+        "DescriptionName": "[PVZ1MODE_PEACE]",
+	"Description": "[PVZ1MODE_PEACE_NORMAL_DESC]",
+        "WaveCount": 10,
+        "Waves": [
+          [
+            "RTID(Wave1Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9Jittered0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10Jittered0@CurrentLevel)"
+          ]
+        ],
+        "ZombieCountDownFirstWaveConveyorSecs": 5,
+        "ZombieCountDownFirstWaveSecs": 12,
+        "ZombieCountDownHugeWaveDelay": 5
+      }
+    },
+    {
+      "aliases": [
+        "Wave1Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(mausoleum_archer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(mausoleum_archer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(mausoleum_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(mausoleum_archer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(mausoleum_archer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(qin_taoist@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(qin_taoist@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(mausoleum_cavalry@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(mausoleum_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(mausoleum_archer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(mausoleum_archer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10Jittered0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(qin_shield_pair@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(mausoleum_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(mausoleum_gargantuar@ZombieTypes)"
+          }
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

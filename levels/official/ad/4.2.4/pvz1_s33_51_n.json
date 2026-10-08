@@ -1,0 +1,912 @@
+{
+  "#comment": "PVZ1 S33 W07 Level 3",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[PLAYERS_TRIP_TO_MEMORY]",
+        "Name": "[S32_MEMORY_LEVEL_NAME_051]",
+        "LevelNumber": 3,
+        "StartingSun": 200,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": true,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "StageModule": "RTID(AutumnLateStage@LevelModules)",
+        "Modules": [
+          "RTID(TrialTheme@CurrentLevel)",
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(SkySun@CurrentLevel)",
+          "RTID(WaveModule@CurrentLevel)"
+        ],
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "ShowZombies": [
+          "ScreenDoor",
+          "bobsled_punk",
+          "catapult",
+          "tutorial",
+          "tutorial_armor1",
+          "tutorial_armor2",
+          "tutorial_flag"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "TrialTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_fastcd"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Challenges"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "StarChallengePlantsSurviveProps",
+      "objdata": {
+        "Count": 8
+      }
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "objdata": {
+        "MaximumPlants": 35
+      }
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "StarChallengeKillZombiesInTimeProps",
+      "objdata": {
+        "ZombiesToKill": 3,
+        "Time": 30
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser",
+        "OverrideSeedSlotsCount": 8,
+        "GlobalLevel": 1,
+        "PresetPlantList": [
+          "spikeweed"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SkySun"
+      ],
+      "objclass": "SunDropperProperties",
+      "objdata": {
+        "InitialSunDropDelay": 20,
+        "SunCountdownBase": 20,
+        "SunCountdownRange": 0,
+        "SunCountdownMax": 20,
+        "SunCountdownIncreasePerSun": 0
+      }
+    },
+    {
+      "aliases": [
+        "WaveModule"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerPropsVector": [
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)"
+        ],
+        "DynamicZombies": []
+      }
+    },
+    {
+      "aliases": [
+        "Offsets"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 20,
+        "ZombieSpawningRandomJitter": 10
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(bobsled_punk@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_flag@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Barrel5"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 10,
+        "Barrels": [
+          {
+            "Row": 2,
+            "Type": "barrelempty",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.185
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(bobsled_punk@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(bobsled_punk@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(bobsled_punk@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_flag@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Barrel10"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 10,
+        "Barrels": [
+          {
+            "Row": 4,
+            "Type": "barrelempty",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.185
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(bobsled_punk@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(bobsled_punk@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(bobsled_punk@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(bobsled_punk@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_flag@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Barrel15"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 10,
+        "Barrels": [
+          {
+            "Row": 2,
+            "Type": "barrelempty",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.185
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelempty",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.185
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Waves"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "WaveCount": 15,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Barrel5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)",
+            "RTID(Barrel10@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)",
+            "RTID(Barrel15@CurrentLevel)"
+          ]
+        ],
+        "FlagWaveInterval": 5,
+        "SuppressFlagZombie": true,
+        "SuppressedDynamicZombieWaves": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "MinNextWaveHealthPercentage": 0.5,
+        "MaxNextWaveHealthPercentage": 0.5,
+        "ZombieCountdownFirstWaveSecs": 25,
+        "ZombieCountdownFirstWaveConveyorSecs": 25,
+        "ZombieCountdownHugeWaveDelay": 5
+      }
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,750 @@
+{
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[PLAYERS_TRIP_TO_MEMORY]",
+        "LevelNumber": 5,
+        "IsArtifactDisabled": true,
+        "DisablePeavine": true,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(ZombossRobotIntro@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(FastSpeed@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombossBattle@CurrentLevel)",
+          "RTID(RiftThemeDemo@CurrentLevel)"
+        ],
+        "ZombieMaxLevel": 1,
+        "Name": "[S32_MEMORY_LEVEL_NAME_BOSS_7]",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "StageModule": "RTID(SkycityStage@LevelModules)",
+        "ShowZombies": []
+      }
+    },
+    {
+      "objclass": "RiftThemeDemoModuleProperties",
+      "aliases": [
+          "RiftThemeDemo"
+      ],
+      "objdata": {
+          "DemoRiftThemeName": [
+          ]
+      }
+  },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 3,
+            "MaxPackets": 0
+          },
+          {
+            "Delay": 3,
+            "MaxPackets": 4
+          },
+          {
+            "Delay": 5,
+            "MaxPackets": 6
+          },
+          {
+            "Delay": 5,
+            "MaxPackets": 8
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "iLevel": 1,
+            "MaxCount": 5,
+            "MaxWeightFactor": 0.05,
+            "MinCount": 0,
+            "MinWeightFactor": 1.0,
+            "PlantType": "pineapple",
+            "Weight": 30
+          },
+          {
+            "iLevel": 1,
+            "MaxCount": 1,
+            "MaxWeightFactor": 0.0,
+            "MinCount": 0,
+            "MinWeightFactor": 1.0,
+            "PlantType": "saucer",
+            "Weight": 20
+          },
+          {
+            "iLevel": 1,
+            "MaxCount": 1,
+            "MaxWeightFactor": 0.06,
+            "MinCount": 0,
+            "MinWeightFactor": 1.0,
+            "PlantType": "doublesamara",
+            "Weight": 90
+          },
+          {
+            "iLevel": 1,
+            "MaxCount": 2,
+            "MaxWeightFactor": 0.0,
+            "MinCount": 0,
+            "MinWeightFactor": 1.0,
+            "PlantType": "ghostpepper",
+            "Weight": 40
+          },
+          {
+            "iLevel": 1,
+            "MaxCount": 2,
+            "MaxWeightFactor": 0.0,
+            "MinCount": 1,
+            "MinWeightFactor": 2.5,
+            "PlantType": "anthurium",
+            "Weight": 40
+          },
+          {
+            "iLevel": 1,
+            "MaxCount": 10,
+            "MaxWeightFactor": 0.2,
+            "MinCount": 0,
+            "MinWeightFactor": 1.0,
+            "PlantType": "asparagus",
+            "Weight": 50
+          },
+          {
+            "iLevel": 1,
+            "MaxCount": 8,
+            "MaxWeightFactor": 0.3,
+            "MinCount": 0,
+            "MinWeightFactor": 1.0,
+            "PlantType": "elaeocarpus",
+            "Weight": 40
+          },
+          {
+            "iLevel": 1,
+            "MaxCount": 0,
+            "MaxWeightFactor": 1.0,
+            "MinCount": 0,
+            "MinWeightFactor": 1.0,
+            "PlantType": "twinshoneysuckle",
+            "Weight": 20
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "FastSpeed"
+      ],
+      "objclass": "ZombieMoveFastModuleProperties",
+      "objdata": {
+        "SpeedUp": 3.0,
+        "StopColumn": 8
+      }
+    },
+    {
+      "aliases": [
+        "ZombossRobotIntro"
+      ],
+      "objclass": "ZombossBattleIntroProperties",
+      "objdata": {
+        "ResourceGroupNames": [],
+        "PanStartOffset": 78,
+        "PanEndOffset": 468,
+        "PanRightDuration": 1.5,
+        "PanLeftDuration": 1.5,
+        "ZombossPhaseCount": 3,
+        "SkipShowingStreetBossBattle": false
+      }
+    },
+    {
+      "aliases": [
+        "ZombossBattle"
+      ],
+      "objclass": "ZombossBattleModuleProperties",
+      "objdata": {
+        "ReservedColumnCount": 2,
+        "ZombossMechType": "zombossmech_skycity_memo",
+        "ZombossDeathRow": 3,
+        "ZombossDeathColumn": 8,
+        "ZombossStageCount": 4
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(ApplyZombieConditionsChallenge@CurrentLevel)",
+            "RTID(KillZombies@CurrentLevel)",
+            "RTID(PlantfoodNonuse@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "PlantfoodNonuse"
+      ],
+      "objclass": "StarChallengePlantFoodNonuseProps",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "KillZombies"
+      ],
+      "objclass": "StarChallengeKillZombiesInTimeProps",
+      "objdata": {
+        "ZombiesToKill": 8,
+        "Time": 15
+      }
+    },
+    {
+      "aliases": [
+        "ApplyZombieConditionsChallenge"
+      ],
+      "objclass": "ApplyZombieConditionsChallengeProps",
+      "objdata": {
+        "ConditionToInflict": [
+          "stun"
+        ],
+        "NumZombieConditionsToApply": 15
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawnImp2"
+      ],
+      "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+      "objdata": {
+        "Weight": 50,
+        "RepeatMin": 0,
+        "RepeatMax": 1,
+        "ColumnEnd": "2",
+        "ColumnStart": "1",
+        "MinSpawn": "3",
+        "MaxSpawn": "4",
+        "ZombieNames": [
+          "skycity_ggtimp"
+        ],
+        "ZombieWeights": [
+          100
+        ],
+        "TimeBeforeSpawn": 3,
+        "ZombieFallTime": 0,
+        "Phase": "SkillFirst",
+        "PhaseAfter": "Cooldown",
+        "RiseFromGround": false,
+        "RampUpAnimation": "",
+        "LoopingAnimation": "attack04",
+        "RampDownAnimation": "",
+        "EffectTypeToShow": "",
+        "DropAudioEvent": ""
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawnImp3"
+      ],
+      "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+      "objdata": {
+        "Weight": 50,
+        "RepeatMin": 0,
+        "RepeatMax": 1,
+        "ColumnEnd": "2",
+        "ColumnStart": "1",
+        "MinSpawn": "5",
+        "MaxSpawn": "8",
+        "ZombieNames": [
+          "skycity_ggtimp"
+        ],
+        "ZombieWeights": [
+          100
+        ],
+        "TimeBeforeSpawn": 3,
+        "ZombieFallTime": 0,
+        "Phase": "SkillFirst",
+        "PhaseAfter": "Cooldown",
+        "RiseFromGround": false,
+        "RampUpAnimation": "",
+        "LoopingAnimation": "zhaohuan",
+        "RampDownAnimation": "",
+        "EffectTypeToShow": "",
+        "DropAudioEvent": ""
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawnJetpack1"
+      ],
+      "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+      "objdata": {
+        "Weight": 30,
+        "RepeatMin": 0,
+        "RepeatMax": 1,
+        "ColumnEnd": "8",
+        "ColumnStart": "7",
+        "MinSpawn": "2",
+        "MaxSpawn": "3",
+        "ZombieNames": [
+          "future_jetpack",
+          "future_jetpack_veteran"
+        ],
+        "ZombieWeights": [
+          95,
+          5
+        ],
+        "TimeBeforeSpawn": 3,
+        "ZombieFallTime": 0,
+        "Phase": "SkillFirst",
+        "PhaseAfter": "Cooldown",
+        "RiseFromGround": false,
+        "RampUpAnimation": "",
+        "LoopingAnimation": "attack04",
+        "RampDownAnimation": "",
+        "EffectTypeToShow": "",
+        "DropAudioEvent": ""
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawnJetpack2"
+      ],
+      "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+      "objdata": {
+        "Weight": 50,
+        "RepeatMin": 0,
+        "RepeatMax": 1,
+        "ColumnEnd": "6",
+        "ColumnStart": "4",
+        "MinSpawn": "4",
+        "MaxSpawn": "6",
+        "ZombieNames": [
+          "future_jetpack",
+          "future_jetpack_veteran",
+          "future_jetpack_disco"
+        ],
+        "ZombieWeights": [
+          100,
+          10,
+          100
+        ],
+        "TimeBeforeSpawn": 3,
+        "ZombieFallTime": 0,
+        "Phase": "SkillFirst",
+        "PhaseAfter": "Cooldown",
+        "RiseFromGround": false,
+        "RampUpAnimation": "",
+        "LoopingAnimation": "attack04",
+        "RampDownAnimation": "",
+        "EffectTypeToShow": "",
+        "DropAudioEvent": ""
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawnJetpack3"
+      ],
+      "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+      "objdata": {
+        "Weight": 50,
+        "RepeatMin": 0,
+        "RepeatMax": 1,
+        "ColumnEnd": "6",
+        "ColumnStart": "4",
+        "MinSpawn": "6",
+        "MaxSpawn": "9",
+        "ZombieNames": [
+          "future_jetpack",
+          "birthday_jetpack",
+          "future_jetpack_veteran"
+        ],
+        "ZombieWeights": [
+          1,
+          1,
+          100
+        ],
+        "TimeBeforeSpawn": 3,
+        "ZombieFallTime": 0,
+        "Phase": "SkillFirst",
+        "PhaseAfter": "Cooldown",
+        "RiseFromGround": false,
+        "RampUpAnimation": "",
+        "LoopingAnimation": "zhaohuan",
+        "RampDownAnimation": "",
+        "EffectTypeToShow": "",
+        "DropAudioEvent": ""
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawnMissle3"
+      ],
+      "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+      "objdata": {
+        "Weight": 50,
+        "RepeatMin": 0,
+        "RepeatMax": 0,
+        "ColumnEnd": "7",
+        "ColumnStart": "6",
+        "MinSpawn": "1",
+        "MaxSpawn": "1",
+        "ZombieNames": [
+          "air_missile_launcher"
+        ],
+        "ZombieWeights": [
+          100
+        ],
+        "TimeBeforeSpawn": 3,
+        "ZombieFallTime": 0,
+        "Phase": "SkillFirst",
+        "PhaseAfter": "Cooldown",
+        "RiseFromGround": false,
+        "RampUpAnimation": "",
+        "LoopingAnimation": "zhaohuan",
+        "RampDownAnimation": "",
+        "EffectTypeToShow": "",
+        "DropAudioEvent": ""
+      }
+    },
+    {
+      "aliases": [
+        "ZombieZombossMechSkyCityMemo"
+      ],
+      "objclass": "ZombieZombossMechSkyCityProps",
+      "objdata": {
+        "Speed": 0.1,
+        "CanSpawnPlantFood": false,
+        "EnableAutoTest": false,
+        "SizeType": "big",
+        "HeadDropFraction": -1,
+        "ArmDropFraction": -1,
+        "HitRect": {
+          "mX": 30,
+          "mY": 10,
+          "mWidth": 115,
+          "mHeight": 340
+        },
+        "GridExtents": {
+          "mX": 3,
+          "mY": 2
+        },
+        "AttackRect": {
+          "mX": 15,
+          "mY": 0,
+          "mWidth": 20,
+          "mHeight": 125
+        },
+        "ArtCenter": {
+          "x": 30,
+          "y": 130
+        },
+        "AlmanacOffset": {
+          "x": 85,
+          "y": 12
+        },
+        "AlmanacScale": 0.7,
+        "ShadowOffset": {
+          "x": 55,
+          "y": -50,
+          "z": 0.8
+        },
+        "ShadowScaling": {
+          "x": 4.5,
+          "y": 4.5
+        },
+        "GroundTrackName": "ground_swatch",
+        "ZombieStats": [
+          {
+            "Type": "toughness",
+            "Value": "toughness8"
+          },
+          {
+            "Type": "speed",
+            "Value": "speed3"
+          }
+        ],
+        "ZombieLevelStats": [
+          {
+            "AttackLevel": 1,
+            "HitPointsLevel": 1
+          },
+          {
+            "AttackLevel": 2,
+            "HitPointsLevel": 1
+          },
+          {
+            "AttackLevel": 3,
+            "HitPointsLevel": 1
+          },
+          {
+            "AttackLevel": 4,
+            "HitPointsLevel": 1
+          },
+          {
+            "AttackLevel": 5,
+            "HitPointsLevel": 1
+          }
+        ],
+        "CanTriggerZombieWin": false,
+        "IsValidPinchTarget": false,
+        "CanBeFlicked": false,
+        "CanBeLaunchedByPlants": false,
+        "# Zomboss properties": 0,
+        "SquashZombies": false,
+        "SquashGridItems": false,
+        "MinColumn": 1,
+        "MaxColumn": 7,
+        "CanInvokeInvisible": true,
+        "HideDuringIntro": true,
+        "PowerUpDamageModifier": 0.25,
+        "CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_COMMON",
+        "CrosshairAnimation": "missile_lock_reticle",
+        "RocketAnimation": "missile",
+        "RocketExplosionAnimation": "missile_explosion",
+        "CanTransform": true,
+        "EnterRow": 2,
+        "EnterColumn": 8,
+        "AircraftHitpoints": 1000,
+        "AircraftLineDamage": 10,
+        "AircraftSingleDamage": 10,
+        "CanTakeThunder": false,
+        "Stages": [
+          {
+            "Actions": [
+              "RTID(ZombossSkyCityWalk1@ZombieActions)",
+              "RTID(ZombossSkyCityAttackNearBy1@ZombieActions)",
+              "RTID(ZombossSkyCityRushDown1@ZombieActions)",
+              "RTID(ZombossSkyCitySpawn1@CurrentLevel)",
+              "RTID(ZombossSkyCitySpawnJetpack1@CurrentLevel)",
+              "RTID(ZombossSkyCitySandstorm1@ZombieActions)"
+            ],
+            "HitPoints": 16500,
+            "Level": 1,
+            "DamageIndexFull": 0,
+            "DamageIndexHalf": 0,
+            "AnimRateModifier": 1,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 1,
+              "Max": 2
+            },
+            "RetreatAction": "RTID(ZombossSkyCityWalk1@ZombieActions)",
+            "StunTime": 3,
+            "StunDamageScale": 1.25,
+            "StunDamageColorFlash": {
+              "mRed": 255,
+              "mGreen": 200,
+              "mBlue": 200,
+              "mAlpha": 255
+            }
+          },
+          {
+            "Actions": [
+              "RTID(ZombossSkyCityWalk1@ZombieActions)",
+              "RTID(ZombossSkyCityAttackNearBy1@ZombieActions)",
+              "RTID(ZombossSkyCityRushDown1@ZombieActions)",
+              "RTID(ZombossSkyCitySpawn2@CurrentLevel)",
+              "RTID(ZombossSkyCitySpawnImp2@CurrentLevel)",
+              "RTID(ZombossSkyCitySpawnJetpack2@CurrentLevel)",
+              "RTID(ZombossSkyCitySandstorm1@ZombieActions)"
+            ],
+            "HitPoints": 18500,
+            "Level": 2,
+            "DamageIndexFull": 3,
+            "DamageIndexHalf": 3,
+            "AnimRateModifier": 1.1,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 1,
+              "Max": 1
+            },
+            "RetreatAction": "RTID(ZombossSkyCityWalk1@ZombieActions)",
+            "StunTime": 2.5,
+            "StunDamageScale": 1.25,
+            "StunDamageColorFlash": {
+              "mRed": 255,
+              "mGreen": 200,
+              "mBlue": 200,
+              "mAlpha": 255
+            }
+          },
+          {
+            "Actions": [
+              "RTID(ZombossSkyCityWalk1@ZombieActions)",
+              "RTID(ZombossSkyCityThrowAircraft1@ZombieActions)",
+              "RTID(ZombossSkyCitySpawn3_1@CurrentLevel)",
+              "RTID(ZombossSkyCitySpawn3_2@CurrentLevel)",
+              "RTID(ZombossSkyCitySpawnImp3@CurrentLevel)",
+              "RTID(ZombossSkyCitySpawnJetpack3@CurrentLevel)",
+              "RTID(ZombossSkyCitySpawnMissle3@CurrentLevel)",
+              "RTID(ZombossSkyCityLineShoot1@ZombieActions)",
+              "RTID(ZombossSkyCityBarrage1@ZombieActions)"
+            ],
+            "HitPoints": 22500,
+            "Level": 3,
+            "DamageIndexFull": 6,
+            "DamageIndexHalf": 6,
+            "AnimRateModifier": 1.25,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0,
+              "Max": 0
+            },
+            "RetreatAction": "RTID(ZombossSkyCityWalk1@ZombieActions)",
+            "StunTime": 0,
+            "StunDamageScale": 1.25,
+            "StunDamageColorFlash": {
+              "mRed": 255,
+              "mGreen": 200,
+              "mBlue": 200,
+              "mAlpha": 255
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawn1"
+      ],
+      "objclass": "ZombossSkyCitySpawnActionDefinition",
+      "objdata": {
+        "Weight": 50,
+        "RepeatMin": 0,
+        "RepeatMax": 0,
+        "SpawnZombieWavePointRange": {
+          "Min": 1400,
+          "Max": 1400
+        },
+        "SpawnZombieTypes": [
+          "skycity",
+          "skycity_armor1",
+          "skycity_armor2",
+          "skycity_armor3",
+          "skycity_flag",
+          "skycity_battleplane",
+          "skycity_protector",
+          "fly_chicken"
+        ],
+        "SpawnStartTime": 1,
+        "SpawnEndTime": 1.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 0,
+          "Max": 2
+        },
+        "SpawnDistanceVariance": 25
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawn2"
+      ],
+      "objclass": "ZombossSkyCitySpawnActionDefinition",
+      "objdata": {
+        "Weight": 50,
+        "RepeatMin": 1,
+        "RepeatMax": 2,
+        "SpawnZombieWavePointRange": {
+          "Min": 2800,
+          "Max": 3600
+        },
+        "SpawnZombieTypes": [
+          "skycity_protector",
+          "skycity_armor1",
+          "skycity_armor2",
+          "skycity_armor3",
+          "skycity_gargantuar",
+          "cardgame_electric_advanced",
+          "skycity_battleplane",
+          "skycity_twinsplane"
+        ],
+        "SpawnStartTime": 1,
+        "SpawnEndTime": 1.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 0,
+          "Max": 2
+        },
+        "SpawnDistanceVariance": 10
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawn3_1"
+      ],
+      "objclass": "ZombossSkyCitySpawnActionDefinition",
+      "objdata": {
+        "Weight": 50,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnZombieWavePointRange": {
+          "Min": 3000,
+          "Max": 4500
+        },
+        "SpawnZombieTypes": [
+          "skycity_armor2",
+          "skycity_armor3",
+          "skycity_armor4",
+          "skycity_battleplane",
+          "skycity_twinsplane",
+          "skycity_protector",
+          "skycity_gargantuar"
+        ],
+        "SpawnStartTime": 1,
+        "SpawnEndTime": 1.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 0,
+          "Max": 0
+        },
+        "SpawnDistanceVariance": 5
+      }
+    },
+    {
+      "aliases": [
+        "ZombossSkyCitySpawn3_2"
+      ],
+      "objclass": "ZombossSkyCitySpawnActionDefinition",
+      "objdata": {
+        "Weight": 50,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnZombieWavePointRange": {
+          "Min": 3000,
+          "Max": 4500
+        },
+        "SpawnZombieTypes": [
+          "skycity_battleplane",
+          "skycity_twinsplane",
+          "skycity_protector",
+          "skycity_armor3",
+          "skycity_armor4",
+          "cardgame_electric_advanced",
+          "invisible_plane",
+          "skycity_protector"
+        ],
+        "SpawnStartTime": 1,
+        "SpawnEndTime": 1.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 0,
+          "Max": 1
+        },
+        "SpawnDistanceVariance": 10
+      }
+    }
+  ],
+  "version": 1
+}

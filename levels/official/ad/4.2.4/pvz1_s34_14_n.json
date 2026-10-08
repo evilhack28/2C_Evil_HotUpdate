@@ -1,0 +1,1017 @@
+{
+  "version": 1,
+  "#comment": "PVZ1 S34 W2 6",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Name": "[S34_MEMORY_LEVEL_NAME_014]",
+        "Description": "[S34_MEMORY_W2_DESC_6]",
+        "LevelNumber": 1,
+        "StartingSun": 225,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": false,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "StageModule": "RTID(AutumnLateStage@LevelModules)",
+        "Modules": [
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(WaveModule@CurrentLevel)",
+          "RTID(InitialPlants@CurrentLevel)",
+          "RTID(SkySun@CurrentLevel)"
+        ],
+        "ShowZombies": [
+          "tutorial",
+          "tutorial_armor1",
+          "beghouled_newspaper",
+          "tutorial_imp",
+          "tutorial_armor2",
+          "lostcity_jane",
+          "pogo"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_melee"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Challenges"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "StarChallengeZombieSpeedProps",
+      "objdata": {
+        "SpeedModifier": 0.25
+      }
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "objdata": {
+        "MaximumPlants": 18
+      }
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "StarChallengePlantFoodNonuseProps",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser",
+        "OverrideSeedSlotsCount": 8,
+        "GlobalLevel": 1,
+        "PresetPlantList": []
+      }
+    },
+    {
+      "aliases": [
+        "InitialPlants"
+      ],
+      "objclass": "InitialPlantProperties",
+      "objdata": {
+        "InitialPlantPlacements": [
+          {
+            "GridX": 0,
+            "GridY": 1,
+            "Level": 1,
+            "TypeName": "sunflower"
+          },
+          {
+            "GridX": 0,
+            "GridY": 3,
+            "Level": 1,
+            "TypeName": "sunflower"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SkySun"
+      ],
+      "objclass": "SunDropperProperties",
+      "objdata": {
+        "InitialSunDropDelay": 12,
+        "SunCountdownBase": 18,
+        "SunCountdownRange": 0,
+        "SunCountdownMax": 18,
+        "SunCountdownIncreasePerSun": 0
+      }
+    },
+    {
+      "aliases": [
+        "Bounce"
+      ],
+      "objclass": "ZombieBoundTileActionProps",
+      "objdata": {
+        "Tiles": [
+          {
+            "Location": {
+              "mX": 6,
+              "mY": 0
+            },
+            "Type": "zombie_bound_tile"
+          },
+          {
+            "Location": {
+              "mX": 8,
+              "mY": 1
+            },
+            "Type": "zombie_bound_tile"
+          },
+          {
+            "Location": {
+              "mX": 7,
+              "mY": 2
+            },
+            "Type": "zombie_bound_tile"
+          },
+          {
+            "Location": {
+              "mX": 6,
+              "mY": 3
+            },
+            "Type": "zombie_bound_tile"
+          },
+          {
+            "Location": {
+              "mX": 8,
+              "mY": 4
+            },
+            "Type": "zombie_bound_tile"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_imp@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Offsets"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 28,
+        "ZombieSpawningRandomJitter": 10
+      }
+    },
+    {
+      "aliases": [
+        "WaveModule"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerPropsVector": [
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)"
+        ],
+        "DynamicZombies": []
+      }
+    },
+    {
+      "aliases": [
+        "Waves"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "WaveCount": 10,
+        "Waves": [
+          [
+            "RTID(Bounce@CurrentLevel)",
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)"
+          ]
+        ],
+        "FlagWaveInterval": 4,
+        "SuppressFlagZombie": true,
+        "SuppressedDynamicZombieWaves": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "MinNextWaveHealthPercentage": 0.6,
+        "MaxNextWaveHealthPercentage": 0.6,
+        "ZombieCountdownFirstWaveSecs": 10,
+        "ZombieCountdownHugeWaveDelay": 4,
+        "DescriptionName": "[S34_MEMORY_MODE_014]",
+        "Description": "[S34_MEMORY_MODE_DESC_014]"
+      }
+    }
+  ]
+}

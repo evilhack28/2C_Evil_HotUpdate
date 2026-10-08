@@ -1,0 +1,49 @@
+name: Sync official levels
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+concurrency:
+  group: sync-official
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - run: pip install pycryptodome
+
+      - name: Fetch official levels into levels/official/
+        run: python -u sync_official.py
+
+      - name: Commit and trigger a build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "no changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add levels
+          git commit -F .sync_message
+          git push
+          # pushes made with GITHUB_TOKEN don't fire other workflows, so start the build explicitly
+          gh workflow run build.yml

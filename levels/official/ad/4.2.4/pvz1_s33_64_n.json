@@ -1,0 +1,773 @@
+{
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_TRIP_TO_MEMORY]",
+                "LevelNumber": 1,
+                "DisablePeavine": true,
+                "IsArtifactDisabled": true,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(GridItemPlacement@CurrentLevel)",
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(TimeEnergy@CurrentLevel)",
+                    "RTID(MoonMowers@LevelModules)"
+                ],
+                "Name": "[S32_MEMORY_LEVEL_NAME_064]",
+                "StageModule": "RTID(MoonStage@LevelModules)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "OverrideSeedSlotsCount": 8,
+                "PlantBlackList": [],
+                "PlantWhiteList": [],
+                "PresetPlantList": [
+                    "birthsunflower",
+                    "anthurium",
+                    "cosmicpea",
+                    "cosmicmushroom",
+                    "cosmicnut",
+                    "gravitree"
+                ],
+                "SelectionMethod": "preset",
+                "GlobalLevel": 1
+            }
+        },
+        {
+            "aliases": [
+                "TimeEnergy"
+            ],
+            "objclass": "TimeEnergyModuleProperties",
+            "objdata": {
+                "TimeEnergyValueMax": 400.0,
+                "TimeEnergyTriggers": []
+            }
+        },
+        {
+            "aliases": [
+                "GridItemPlacement"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 1,
+                        "GridY": 0,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 1,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 2,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 3,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 4,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 0,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 1,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 2,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 3,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 4,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 0,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 1,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 2,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 3,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 4,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 0,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 1,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 2,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 3,
+                        "TypeName": "cosmoss"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 4,
+                        "TypeName": "cosmoss"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(PlantfoodNonuse@CurrentLevel)",
+                        "RTID(SunReduced@CurrentLevel)",
+                        "RTID(SaveMowers@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "SaveMowers"
+            ],
+            "objclass": "StarChallengeSaveMowersProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "PlantfoodNonuse"
+            ],
+            "objclass": "StarChallengePlantFoodNonuseProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "SunReduced"
+            ],
+            "objclass": "StarChallengeSunReducedProps",
+            "objdata": {
+                "sunModifier": 0.5
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "WaveManagerPropsVector": [
+                    "RTID(WaveManagerPropsWeek1@CurrentLevel)",
+                    "RTID(WaveManagerPropsWeek1@CurrentLevel)",
+                    "RTID(WaveManagerPropsWeek1@CurrentLevel)",
+                    "RTID(WaveManagerPropsWeek1@CurrentLevel)"
+                ],
+                "DynamicZombies": [
+                    {
+                        "PointIncrementPerWave": 40,
+                        "StartingPoints": 200,
+                        "StartingWave": 3,
+                        "ZombieLevel": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "ZombiePool": [
+                            "RTID(moon@ZombieTypes)",
+                            "RTID(moon_armor1@ZombieTypes)",
+                            "RTID(moon_armor2@ZombieTypes)"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerPropsWeek1"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 5,
+                "MaxNextWaveHealthPercentage": 0.55,
+                "MinNextWaveHealthPercentage": 0.45,
+                "DescriptionName": "[PVZ1MODE_PEACE]",
+                "Description": "[PVZ1MODE_PEACE_NORMAL_DESC]",
+                "WaveCount": 15,
+                "Waves": [
+                    [
+                        "RTID(Wave1Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave11Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave12Jittered0@CurrentLevel)",
+                        "RTID(Wave12PortalEvent0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave13Jittered1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave14Jittered0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15Jittered0@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave1Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave13Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon_armor3@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(disco_mech@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave11Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave12Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave13Jittered1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave14Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave15Jittered0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(skycity_electric@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(moon_walker@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave12PortalEvent0"
+            ],
+            "objclass": "SpawnModernPortalsWaveActionProps",
+            "objdata": {
+                "IgnoreGraveStone": false,
+                "PortalColumn": "8",
+                "PortalRow": "2",
+                "PortalType": "pvz1_elite_skycity_electric_normal",
+                "SpawnEffect": "",
+                "SpawnSoundID": ""
+            }
+        }
+    ],
+    "version": 1
+}

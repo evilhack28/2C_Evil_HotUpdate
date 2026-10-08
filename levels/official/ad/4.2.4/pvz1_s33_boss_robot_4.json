@@ -1,0 +1,413 @@
+{
+    "#comment": "Welcome to the earth world",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_TRIP_TO_MEMORY]",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(ZombossIntro@LevelModules)",
+                    "RTID(ConveyorBelt@CurrentLevel)",
+                    "RTID(ZombossBattle@CurrentLevel)",
+                    "RTID(PiratePlanks@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)"
+                ],
+                "MusicType": "MiniGame_A",
+                "Name": "[S32_MEMORY_LEVEL_NAME_BOSS_4]",
+                "NormalPresentTable": "pirate_normal_01",
+                "ShinyPresentTable": "pirate_shiny_01",
+                "StageModule": "RTID(PirateStage@LevelModules)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "DisablePeavine": true,
+                "IsArtifactDisabled": true
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(ApplyZombieConditionsChallenge@CurrentLevel)",
+                        "RTID(PlantsSurvive@CurrentLevel)",
+                        "RTID(DefeatZombiesOfType@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "PlantsSurvive"
+            ],
+            "objclass": "StarChallengePlantsSurviveProps",
+            "objdata": {
+                "Count": 10
+            }
+        },
+        {
+            "aliases": [
+                "ApplyZombieConditionsChallenge"
+            ],
+            "objclass": "ApplyZombieConditionsChallengeProps",
+            "objdata": {
+                "IncludeBurnedToAsh": true,
+                "NumZombieConditionsToApply": 20
+            }
+        },
+        {
+            "aliases": [
+                "DefeatZombiesOfType"
+            ],
+            "objclass": "DefeatZombiesOfTypeChallengeProps",
+            "objdata": {
+                "Description": "[DEFEAT_X_IMPS]",
+                "NumZombiesToKill": 10,
+                "TypesToKill": {
+                    "List": [
+                        "uncharted_cannon",
+                        "cannon",
+                        "pirate_imp"
+                    ],
+                    "ListType": "whitelist"
+                }
+            }
+        },
+        {
+            "aliases": [
+                "PiratePlanks"
+            ],
+            "objclass": "PiratePlankProperties",
+            "objdata": {
+                "PlankRows": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ConveyorBelt"
+            ],
+            "objclass": "ConveyorSeedBankProperties",
+            "objdata": {
+                "DropDelayConditions": [
+                    {
+                        "Delay": 2,
+                        "MaxPackets": 0
+                    },
+                    {
+                        "Delay": 3,
+                        "MaxPackets": 2
+                    },
+                    {
+                        "Delay": 5,
+                        "MaxPackets": 4
+                    },
+                    {
+                        "Delay": 8,
+                        "MaxPackets": 10
+                    }
+                ],
+                "InitialPlantList": [
+                    {
+                        "MaxCount": 4,
+                        "MaxCountCooldownSeconds": 10,
+                        "iLevel": 1,
+                        "MaxWeightFactor": 0,
+                        "MinCount": 0,
+                        "PlantType": "gumnut",
+                        "Weight": 10
+                    },
+                    {
+                        "MaxCount": 3,
+                        "MaxCountCooldownSeconds": 30,
+                        "iLevel": 2,
+                        "MaxWeightFactor": 0,
+                        "MinCount": 1,
+                        "MinWeightFactor": 2,
+                        "PlantType": "stickybombrice",
+                        "Weight": 10
+                    },
+                    {
+                        "MaxCount": 1,
+                        "MaxCountCooldownSeconds": 20,
+                        "iLevel": 1,
+                        "MaxWeightFactor": 0.1,
+                        "PlantType": "jalapeno",
+                        "Weight": 5
+                    },
+                    {
+                        "MaxCount": 7,
+                        "MaxCountCooldownSeconds": 15,
+                        "MaxWeightFactor": 0,
+                        "MinCount": 5,
+                        "iLevel": 1,
+                        "PlantType": "electricpeashooter",
+                        "Weight": 30
+                    },
+                    {
+                        "MaxCount": 10,
+                        "MaxCountCooldownSeconds": 20,
+                        "iLevel": 1,
+                        "MaxWeightFactor": 0.1,
+                        "MinCount": 3,
+                        "MinWeightFactor": 2,
+                        "PlantType": "spikeweed",
+                        "Weight": 10
+                    }
+                ],
+                "SpeedConditions": [
+                    {
+                        "MaxPackets": 0,
+                        "Speed": 100
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ZombossBattle"
+            ],
+            "objclass": "ZombossBattleModuleProperties",
+            "objdata": {
+                "ReservedColumnCount": 2,
+                "ZombossDeathColumn": 5,
+                "ZombossDeathRow": 3,
+                "ZombossMechType": "zombossmech_pirate_memo",
+                "ZombossSpawnGridPosition": {
+                    "mX": 6,
+                    "mY": 3
+                }
+            }
+        },
+        {
+            "aliases": [
+                "ZombieZombossMechPirateMemo"
+            ],
+            "objclass": "ZombieZombossMechPirateProps",
+            "objdata": {
+                "AlmanacOffset": {
+                    "x": 10,
+                    "y": 80
+                },
+                "AlmanacScale": 0.9,
+                "ArmDropFraction": -1,
+                "HeadDropFraction": -1,
+                "SizeType": "big",
+                "ArtCenter": {
+                    "x": 30,
+                    "y": 130
+                },
+                "AttackRect": {
+                    "mHeight": 125,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "CanBeFlicked": false,
+                "CanBePlantTossedStrong": false,
+                "CanBePlantTossedWeak": false,
+                "CanSpawnPlantFood": false,
+                "CanTriggerZombieWin": false,
+                "CrosshairAnimation": "missile_lock_reticle",
+                "CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_PIRATE",
+                "FoeEatDamageReflectPct": 0.5,
+                "GridExtents": {
+                    "mX": 3,
+                    "mY": 2
+                },
+                "GroundTrackName": "ground_swatch",
+                "HideDuringIntro": true,
+                "HitRect": {
+                    "mHeight": 340,
+                    "mWidth": 115,
+                    "mX": 30,
+                    "mY": 10
+                },
+                "IsValidPinchTarget": false,
+                "MaxColumn": 7,
+                "MinColumn": 5,
+                "PowerUpDamageModifier": 0.25,
+                "RocketAnimation": "missile",
+                "RocketExplosionAnimation": "missile_explosion",
+                "ShadowOffset": {
+                    "x": 55,
+                    "y": -50,
+                    "z": 0.8
+                },
+                "ShadowScaling": {
+                    "x": 4.5,
+                    "y": 4.5
+                },
+                "SkipHeadDropState": true,
+                "Speed": 0.1,
+                "SquashGridItems": false,
+                "SquashZombies": true,
+                "Stages": [
+                    {
+                        "Actions": [
+                            "RTID(ZombossPirateRush3@ZombieActions)",
+                            "RTID(ZombossPirateSpawn2@ZombieActions)",
+                            "RTID(ZombossPirateImpCannon1@ZombieActions)"
+                        ],
+                        "AnimRateModifier": 1,
+                        "ChilledDurationFromFrozen": 5,
+                        "DamageIndexFull": 0,
+                        "DamageIndexHalf": 0,
+                        "HitPoints": 2000,
+                        "IdleTime": {
+                            "Max": 0.5,
+                            "Min": 0.3
+                        },
+                        "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+                        "StunDamageScale": 1.5,
+                        "StunStaggerBackMovement": 80,
+                        "StunStaggerBackTime": 0.4,
+                        "StunTime": 2
+                    },
+                    {
+                        "Actions": [
+                            "RTID(ZombossPirateSpawn4@CurrentLevel)",
+                            "RTID(ZombossPirateRush3@ZombieActions)",
+                            "RTID(ZombossPirateImpCannon4@ZombieActions)"
+                        ],
+                        "AnimRateModifier": 1.1,
+                        "ChilledDurationFromFrozen": 5,
+                        "DamageIndexFull": 3,
+                        "DamageIndexHalf": 3,
+                        "HitPoints": 8000,
+                        "IdleTime": {
+                            "Max": 0.5,
+                            "Min": 0.3
+                        },
+                        "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+                        "StunDamageScale": 1.5,
+                        "StunStaggerBackMovement": 80,
+                        "StunStaggerBackTime": 0.4,
+                        "StunTime": 1.5
+                    },
+                    {
+                        "Actions": [
+                            "RTID(ZombossPirateSpawn5@CurrentLevel)",
+                            "RTID(ZombossPirateRush3@ZombieActions)",
+                            "RTID(ZombossPirateImpCannon3@CurrentLevel)"
+                        ],
+                        "AnimRateModifier": 1.25,
+                        "ChilledDurationFromFrozen": 5,
+                        "DamageIndexFull": 6,
+                        "DamageIndexHalf": 6,
+                        "HitPoints": 12000,
+                        "IdleTime": {
+                            "Max": 0.3,
+                            "Min": 0.1
+                        },
+                        "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+                        "StunDamageScale": 1.5,
+                        "StunStaggerBackMovement": 80,
+                        "StunStaggerBackTime": 0.4,
+                        "StunTime": 1
+                    }
+                ],
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness8"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed3"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombossSpawnActionDefinition",
+            "aliases": [
+                "ZombossPirateSpawn4"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 1,
+                "RepeatMax": 1,
+                "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+                "SpawnZombieWavePointRange": {
+                    "Min": 4000,
+                    "Max": 5000
+                },
+                "SpawnZombieTypes": [
+                    "barrelroller",
+                    "pelican",
+                    "cannon",
+                    "pirate_armor4",
+                    "pirate_gargantuar",
+                    "pirate_captain"
+                ],
+                "SpawnChargeTime": 0.5,
+                "SpawnCooldownTime": 0.5,
+                "SpawnWavesBetweenPlantFood": {
+                    "Min": 3,
+                    "Max": 5
+                }
+            }
+        },
+        {
+            "objclass": "ZombossSpawnActionDefinition",
+            "aliases": [
+                "ZombossPirateSpawn5"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 2,
+                "RepeatMax": 2,
+                "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+                "SpawnZombieWavePointRange": {
+                    "Min": 4500,
+                    "Max": 5500
+                },
+                "SpawnZombieTypes": [
+                    "pirate_armor4",
+                    "pirate_armor2",
+                    "pelican",
+                    "pirate_gargantuar",
+                    "pirate_captain",
+                    "barrelroller"
+                ],
+                "SpawnChargeTime": 0.5,
+                "SpawnCooldownTime": 0.5,
+                "SpawnWavesBetweenPlantFood": {
+                    "Min": 6,
+                    "Max": 6
+                }
+            }
+        },
+        {
+            "objclass": "ZombossImpCannonActionDefinition",
+            "aliases": [
+                "ZombossPirateImpCannon3"
+            ],
+            "objdata": {
+                "Weight": 12,
+                "RepeatMin": 1,
+                "RepeatMax": 2,
+                "ImpLaunchDelay": 1,
+                "ImpLaunchInterruptDamageAmount": 100,
+                "ImpLaunchCount": 12,
+                "ImpType": "pirate_imp",
+                "ImpLaunchTime": 1,
+                "ImpLaunchTimeVariance": 0.5,
+                "ImpLaunchHeight": 700,
+                "ImpLaunchMinColumn": 3,
+                "ImpLaunchMaxColumn": 5
+            }
+        }
+    ],
+    "version": 1
+}

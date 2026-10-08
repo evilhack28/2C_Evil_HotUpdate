@@ -1,0 +1,15 @@
+{
+  "description": "0 sun and no reload; plant level untouched.",
+  "rules": [
+    {
+      "match": [
+        "propertysheets.json"
+      ],
+      "ops": [
+        {
+          "op": "no_reload"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "description": "Every plant starts at its max level (propertysheets only).",
+  "rules": [
+    {
+      "match": [
+        "propertysheets.json"
+      ],
+      "ops": [
+        {
+          "op": "max_plant_level"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Every plant in every level, forced to plant level 5.",
+  "rules": [
+    {
+      "match": [
+        "*.json"
+      ],
+      "exclude": [
+        "propertysheets.json",
+        "levelmodules.json",
+        "displayavataractions.json"
+      ],
+      "ops": [
+        {
+          "op": "fill_plants"
+        },
+        {
+          "op": "set_global_level",
+          "value": 5
+        }
+      ]
+    }
+  ]
+}

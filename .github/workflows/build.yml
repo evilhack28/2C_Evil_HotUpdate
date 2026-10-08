@@ -1,0 +1,61 @@
+name: Build and publish level bundles
+
+on:
+  push:
+    branches: [main, master]
+    paths: ["levels/**", "main.py", "modlib.py"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-publish
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  build:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pycryptodome
+
+      - name: Build level bundles (levels/)
+        id: build
+        run: |
+          for cv_dir in levels/official/*/*/; do
+            [ -d "$cv_dir" ] || continue
+            platform_dir="$(dirname "$cv_dir")"
+            platform="$(basename "$platform_dir")"
+            cv="$(basename "$cv_dir")"
+            echo "::group::$platform/$cv"
+
+            hash="$(python fetch_real_hash.py "$cv" --platform "$platform" | sed -n 's/^hash:[[:space:]]*//p' || true)"
+            if [ -z "$hash" ]; then
+              echo "no real hash for $cv ($platform) right now -- skipping (the game isn't asking for a bundle at this version)"
+              echo "::endgroup::"
+              continue
+            fi
+
+            python main.py "$cv" "$cv_dir" dist --hash "$hash" --all-mods --platform "$platform"
+            echo "::endgroup::"
+          done
+          [ -d dist ] && echo "publish=true" >> "$GITHUB_OUTPUT" || echo "nothing built, nothing to publish"
+
+      - name: Publish to gh-pages
+        if: steps.build.outputs.publish == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: false

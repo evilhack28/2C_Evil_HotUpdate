@@ -1,0 +1,21 @@
+{
+  "description": "Max level, 0 sun, no reload, buffed Cherry Bomb and dart plants.",
+  "includes": [
+    "max_level"
+  ],
+  "rules": [
+    {
+      "match": [
+        "propertysheets.json"
+      ],
+      "ops": [
+        {
+          "op": "no_reload"
+        },
+        {
+          "op": "max_buffs"
+        }
+      ]
+    }
+  ]
+}

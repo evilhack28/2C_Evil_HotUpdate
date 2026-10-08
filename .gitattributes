@@ -1,0 +1,4 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+# Level files are mirrored byte-for-byte from the official bundles (sync compares sha256), so never touch their line endings
+levels/official/** -text
