@@ -218,16 +218,6 @@
     },
     {
       "aliases": [
-        "Offsets"
-      ],
-      "objclass": "ZombieJitterOffsets",
-      "objdata": {
-        "ZombieSpawningOffsetIncrement": 60,
-        "ZombieSpawningRandomJitter": 10
-      }
-    },
-    {
-      "aliases": [
         "Escort1"
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
@@ -255,7 +245,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Escort1EntryBand@CurrentLevel)"
       }
     },
     {
@@ -287,7 +277,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Escort2EntryBand@CurrentLevel)"
       }
     },
     {
@@ -324,7 +314,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Escort3EntryBand@CurrentLevel)"
       }
     },
     {
@@ -361,7 +351,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Escort4EntryBand@CurrentLevel)"
       }
     },
     {
@@ -403,7 +393,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Escort5EntryBand@CurrentLevel)"
       }
     },
     {
@@ -450,7 +440,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Escort6EntryBand@CurrentLevel)"
       }
     },
     {
@@ -497,6 +487,66 @@
         "ZombieCountdownHugeWaveDelay": 3,
         "DescriptionName": "[S34_MEMORY_MODE_BOSS_3]",
         "Description": "[S34_MEMORY_MODE_DESC_BOSS_3]"
+      }
+    },
+    {
+      "aliases": [
+        "Escort1EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 49
+      }
+    },
+    {
+      "aliases": [
+        "Escort2EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 49
+      }
+    },
+    {
+      "aliases": [
+        "Escort3EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 49
+      }
+    },
+    {
+      "aliases": [
+        "Escort4EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 49
+      }
+    },
+    {
+      "aliases": [
+        "Escort5EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 49
+      }
+    },
+    {
+      "aliases": [
+        "Escort6EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 49
       }
     }
   ],

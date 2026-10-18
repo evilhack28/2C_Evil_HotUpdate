@@ -10,7 +10,7 @@
         "LevelNumber": 1,
         "StartingSun": 250,
         "ZombieMaxLevel": 1,
-        "IsArtifactDisabled": false,
+        "IsArtifactDisabled": true,
         "Loot": "RTID(DefaultLoot@LevelModules)",
         "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
         "StageModule": "RTID(RoofStage@LevelModules)",
@@ -24,14 +24,18 @@
           "RTID(ZombiesDeadWinCon@LevelModules)",
           "RTID(WaveModule@CurrentLevel)",
           "RTID(InitialPlants@CurrentLevel)",
-          "RTID(SkySun@CurrentLevel)"
+          "RTID(SkySun@CurrentLevel)",
+          "RTID(RoofJumpTiles@CurrentLevel)"
         ],
         "ShowZombies": [
           "tutorial",
           "tutorial_armor1",
           "lostcity_excavator",
-          "dark_juggler",
-          "tutorial_gargantuar"
+          "cannon",
+          "tutorial_gargantuar",
+          "pvz1_bungee",
+          "pogo",
+          "football_mech"
         ]
       }
     },
@@ -87,7 +91,8 @@
         "OverrideSeedSlotsCount": 8,
         "GlobalLevel": 1,
         "PresetPlantList": [
-          "flowerpot"
+          "flowerpot",
+          "umbrellaleaf"
         ]
       }
     },
@@ -159,16 +164,10 @@
             "TypeName": "flowerpot"
           },
           {
-            "GridX": 5,
+            "GridX": 2,
             "GridY": 1,
             "Level": 1,
-            "TypeName": "flowerpot"
-          },
-          {
-            "GridX": 5,
-            "GridY": 3,
-            "Level": 1,
-            "TypeName": "flowerpot"
+            "TypeName": "umbrellaleaf"
           }
         ]
       }
@@ -200,7 +199,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave1EntryBand@CurrentLevel)"
       }
     },
     {
@@ -212,13 +211,13 @@
         "AdditionalPlantfood": 0,
         "Zombies": [
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
-            "Row": "4",
+            "Type": "RTID(cannon@ZombieTypes)",
+            "Row": "2",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "3",
+            "Row": "2",
             "Level": 1
           },
           {
@@ -232,7 +231,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave2EntryBand@CurrentLevel)"
       }
     },
     {
@@ -274,7 +273,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave3EntryBand@CurrentLevel)"
       }
     },
     {
@@ -286,12 +285,12 @@
         "AdditionalPlantfood": 1,
         "Zombies": [
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "2",
             "Level": 1
           },
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "4",
             "Level": 1
           },
@@ -301,11 +300,6 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
             "Type": "RTID(tutorial@ZombieTypes)",
             "Row": "2",
             "Level": 1
@@ -316,12 +310,12 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Type": "RTID(tutorial_gargantuar@ZombieTypes)",
             "Row": "1",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave4EntryBand@CurrentLevel)"
       }
     },
     {
@@ -373,8 +367,8 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "1",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -383,12 +377,32 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
             "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(football_mech@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave5EntryBand@CurrentLevel)"
       }
     },
     {
@@ -400,12 +414,12 @@
         "AdditionalPlantfood": 0,
         "Zombies": [
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "1",
             "Level": 1
           },
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
@@ -445,8 +459,8 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "2",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -455,12 +469,32 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
             "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_gargantuar@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave6EntryBand@CurrentLevel)"
       }
     },
     {
@@ -487,7 +521,7 @@
             "Level": 1
           },
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "1",
             "Level": 1
           },
@@ -512,13 +546,13 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "1",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "3",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -527,12 +561,32 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "2",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(football_mech@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave7EntryBand@CurrentLevel)"
       }
     },
     {
@@ -549,12 +603,12 @@
             "Level": 1
           },
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "2",
             "Level": 1
           },
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
@@ -569,11 +623,6 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
             "Type": "RTID(tutorial@ZombieTypes)",
             "Row": "1",
             "Level": 1
@@ -581,11 +630,6 @@
           {
             "Type": "RTID(tutorial@ZombieTypes)",
             "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
             "Level": 1
           },
           {
@@ -621,10 +665,15 @@
           {
             "Type": "RTID(tutorial@ZombieTypes)",
             "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave8EntryBand@CurrentLevel)"
       }
     },
     {
@@ -656,7 +705,7 @@
             "Level": 1
           },
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "3",
             "Level": 1
           },
@@ -686,8 +735,8 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "5",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -696,13 +745,13 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "4",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "1",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -711,12 +760,32 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "5",
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(RoofBungee@CurrentLevel)",
+            "Row": "random",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave9EntryBand@CurrentLevel)"
       }
     },
     {
@@ -753,12 +822,12 @@
             "Level": 1
           },
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "2",
             "Level": 1
           },
           {
-            "Type": "RTID(dark_juggler@ZombieTypes)",
+            "Type": "RTID(cannon@ZombieTypes)",
             "Row": "4",
             "Level": 1
           },
@@ -815,20 +884,15 @@
           {
             "Type": "RTID(tutorial@ZombieTypes)",
             "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
-      }
-    },
-    {
-      "aliases": [
-        "Offsets"
-      ],
-      "objclass": "ZombieJitterOffsets",
-      "objdata": {
-        "ZombieSpawningOffsetIncrement": 48,
-        "ZombieSpawningRandomJitter": 8
+        "JitterOffsets": "RTID(Wave10EntryBand@CurrentLevel)"
       }
     },
     {
@@ -840,28 +904,34 @@
         "WaveCount": 10,
         "Waves": [
           [
-            "RTID(Wave1@CurrentLevel)"
+            "RTID(Wave1@CurrentLevel)",
+            "RTID(JumpTileNotice@CurrentLevel)"
           ],
           [
             "RTID(Wave2@CurrentLevel)"
           ],
           [
-            "RTID(Wave3@CurrentLevel)"
+            "RTID(Wave3@CurrentLevel)",
+            "RTID(RoofNoticeFirst@CurrentLevel)"
           ],
           [
-            "RTID(Wave4@CurrentLevel)"
+            "RTID(Wave4@CurrentLevel)",
+            "RTID(RoofStorm4@CurrentLevel)"
           ],
           [
-            "RTID(Wave5@CurrentLevel)"
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(BungeeNotice@CurrentLevel)"
           ],
           [
             "RTID(Wave6@CurrentLevel)"
           ],
           [
-            "RTID(Wave7@CurrentLevel)"
+            "RTID(Wave7@CurrentLevel)",
+            "RTID(RoofNoticeSecond@CurrentLevel)"
           ],
           [
-            "RTID(Wave8@CurrentLevel)"
+            "RTID(Wave8@CurrentLevel)",
+            "RTID(RoofStorm8@CurrentLevel)"
           ],
           [
             "RTID(Wave9@CurrentLevel)"
@@ -871,7 +941,7 @@
           ]
         ],
         "FlagWaveInterval": 4,
-        "SuppressFlagZombie": true,
+        "SuppressFlagZombie": false,
         "SuppressedDynamicZombieWaves": [
           0,
           1,
@@ -921,6 +991,267 @@
       "objclass": "StarChallengePlantsLostProps",
       "objdata": {
         "MaximumPlantsLost": 18
+      }
+    },
+    {
+      "aliases": [
+        "RoofStorm4"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "Type": "sandstorm",
+        "ColumnStart": 3,
+        "ColumnEnd": 4,
+        "GroupSize": 1,
+        "TimeBetweenGroups": 2,
+        "TimeBeforeFullSpawn": 6,
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "RoofStorm8"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "Type": "sandstorm",
+        "ColumnStart": 3,
+        "ColumnEnd": 4,
+        "GroupSize": 1,
+        "TimeBetweenGroups": 2,
+        "TimeBeforeFullSpawn": 6,
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "RoofNoticeFirst"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "GridTypes": [],
+        "SuppressActionIfNoGridItemsFound": false,
+        "ZombieSpawnWaitTime": 0,
+        "WaveStartMessage": "[S34_MEMORY_W3_REWORK_ROOF_WARNING]"
+      }
+    },
+    {
+      "aliases": [
+        "RoofNoticeSecond"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "GridTypes": [],
+        "SuppressActionIfNoGridItemsFound": false,
+        "ZombieSpawnWaitTime": 0,
+        "WaveStartMessage": "[S34_MEMORY_W3_REWORK_ROOF_WARNING]"
+      }
+    },
+    {
+      "aliases": [
+        "Wave1EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "Wave2EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "Wave3EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave4EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave5EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave6EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave7EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave8EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave9EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 144
+      }
+    },
+    {
+      "aliases": [
+        "Wave10EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 144
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "RoofBungee"
+      ],
+      "objdata": {
+        "TypeName": "pvz1_bungee",
+        "ZombieClass": "ZombieBungee",
+        "Properties": "RTID(ZombieBungeeDefault@PropertySheets)",
+        "ResourceGroups": [
+          "ZombieBungeeGroup",
+          "ZombieTutorialGroup"
+        ],
+        "AudioGroups": [
+          "ZombieBungeeAudio"
+        ],
+        "AnimRigClass": "ZombieAnimRig_Bungee",
+        "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_BUNGEE",
+        "HomeWorld": "modern",
+        "BoardAlmanac": false,
+        "Placeable": true
+      }
+    },
+    {
+      "aliases": [
+        "RoofJumpTiles"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "TypeName": "zombie_bound_tile"
+          },
+          {
+            "GridX": 8,
+            "GridY": 1,
+            "TypeName": "zombie_bound_tile"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "TypeName": "zombie_bound_tile"
+          },
+          {
+            "GridX": 8,
+            "GridY": 2,
+            "TypeName": "zombie_bound_tile"
+          },
+          {
+            "GridX": 4,
+            "GridY": 3,
+            "TypeName": "zombie_bound_tile"
+          },
+          {
+            "GridX": 8,
+            "GridY": 3,
+            "TypeName": "zombie_bound_tile"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "JumpTileNotice"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "GridTypes": [],
+        "SuppressActionIfNoGridItemsFound": false,
+        "ZombieSpawnWaitTime": 0,
+        "WaveStartMessage": "[S34_MEMORY_W3_L7_JUMP_NOTICE]"
+      }
+    },
+    {
+      "aliases": [
+        "BungeeNotice"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "GridTypes": [],
+        "SuppressActionIfNoGridItemsFound": false,
+        "ZombieSpawnWaitTime": 0,
+        "WaveStartMessage": "[S34_MEMORY_W3_L7_BUNGEE_NOTICE]"
       }
     }
   ]

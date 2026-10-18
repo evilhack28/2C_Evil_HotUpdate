@@ -23,7 +23,8 @@
           "RTID(SeedBank@CurrentLevel)",
           "RTID(ZombiesDeadWinCon@LevelModules)",
           "RTID(WaveModule@CurrentLevel)",
-          "RTID(SkySun@CurrentLevel)"
+          "RTID(SkySun@CurrentLevel)",
+          "RTID(ProtectUmbrellas@CurrentLevel)"
         ],
         "ShowZombies": [
           "tutorial",
@@ -115,7 +116,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave1EntryBand@CurrentLevel)"
       }
     },
     {
@@ -147,7 +148,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave2EntryBand@CurrentLevel)"
       }
     },
     {
@@ -189,7 +190,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave3EntryBand@CurrentLevel)"
       }
     },
     {
@@ -231,7 +232,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave4EntryBand@CurrentLevel)"
       }
     },
     {
@@ -243,11 +244,6 @@
         "AdditionalPlantfood": 0,
         "Zombies": [
           {
-            "Type": "RTID(dancer_king@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
             "Type": "RTID(catapult@ZombieTypes)",
             "Row": "1",
             "Level": 1
@@ -255,16 +251,6 @@
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "5",
             "Level": 1
           },
           {
@@ -293,7 +279,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave5EntryBand@CurrentLevel)"
       }
     },
     {
@@ -360,7 +346,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave6EntryBand@CurrentLevel)"
       }
     },
     {
@@ -432,7 +418,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave7EntryBand@CurrentLevel)"
       }
     },
     {
@@ -444,16 +430,6 @@
         "AdditionalPlantfood": 1,
         "Zombies": [
           {
-            "Type": "RTID(dancer_king@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(catapult@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
             "Type": "RTID(catapult@ZombieTypes)",
             "Row": "5",
             "Level": 1
@@ -461,16 +437,6 @@
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "3",
             "Level": 1
           },
           {
@@ -514,7 +480,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave8EntryBand@CurrentLevel)"
       }
     },
     {
@@ -606,7 +572,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave9EntryBand@CurrentLevel)"
       }
     },
     {
@@ -708,17 +674,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
-      }
-    },
-    {
-      "aliases": [
-        "Offsets"
-      ],
-      "objclass": "ZombieJitterOffsets",
-      "objdata": {
-        "ZombieSpawningOffsetIncrement": 48,
-        "ZombieSpawningRandomJitter": 8
+        "JitterOffsets": "RTID(Wave10EntryBand@CurrentLevel)"
       }
     },
     {
@@ -739,10 +695,12 @@
             "RTID(Wave3@CurrentLevel)"
           ],
           [
-            "RTID(Wave4@CurrentLevel)"
+            "RTID(Wave4@CurrentLevel)",
+            "RTID(BusNotice@CurrentLevel)"
           ],
           [
-            "RTID(Wave5@CurrentLevel)"
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(SchoolBus5@CurrentLevel)"
           ],
           [
             "RTID(Wave6@CurrentLevel)"
@@ -751,7 +709,8 @@
             "RTID(Wave7@CurrentLevel)"
           ],
           [
-            "RTID(Wave8@CurrentLevel)"
+            "RTID(Wave8@CurrentLevel)",
+            "RTID(SchoolBus8@CurrentLevel)"
           ],
           [
             "RTID(Wave9@CurrentLevel)"
@@ -761,7 +720,7 @@
           ]
         ],
         "FlagWaveInterval": 4,
-        "SuppressFlagZombie": true,
+        "SuppressFlagZombie": false,
         "SuppressedDynamicZombieWaves": [
           0,
           1,
@@ -787,10 +746,9 @@
       "aliases": [
         "Goal1"
       ],
-      "objclass": "StarChallengeKillZombiesInTimeProps",
+      "objclass": "StarChallengeSunReducedProps",
       "objdata": {
-        "ZombiesToKill": 16,
-        "Time": 12
+        "sunModifier": 0.3
       }
     },
     {
@@ -808,6 +766,208 @@
       ],
       "objclass": "StarChallengePlantFoodNonuseProps",
       "objdata": {}
+    },
+    {
+      "aliases": [
+        "SchoolBus5"
+      ],
+      "objclass": "SchoolBusWaveActionProps",
+      "objdata": {
+        "Des": {
+          "Row": 2,
+          "Type": "schoolbus_normal",
+          "Params": {
+            "SchoolBusHitPoints": 2200,
+            "SchoolBusSpeed": 0.16,
+            "Zombies": [
+              {
+                "TypeName": "tutorial",
+                "Level": 1
+              },
+              {
+                "TypeName": "tutorial_armor1",
+                "Level": 1
+              },
+              {
+                "TypeName": "dark_wizard",
+                "Level": 1
+              },
+              {
+                "TypeName": "tutorial",
+                "Level": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "aliases": [
+        "SchoolBus8"
+      ],
+      "objclass": "SchoolBusWaveActionProps",
+      "objdata": {
+        "Des": {
+          "Row": 4,
+          "Type": "schoolbus_normal",
+          "Params": {
+            "SchoolBusHitPoints": 2200,
+            "SchoolBusSpeed": 0.16,
+            "Zombies": [
+              {
+                "TypeName": "tutorial",
+                "Level": 1
+              },
+              {
+                "TypeName": "tutorial_armor1",
+                "Level": 1
+              },
+              {
+                "TypeName": "dark_wizard",
+                "Level": 1
+              },
+              {
+                "TypeName": "tutorial",
+                "Level": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "aliases": [
+        "BusNotice"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "GridTypes": [],
+        "SuppressActionIfNoGridItemsFound": false,
+        "ZombieSpawnWaitTime": 0,
+        "WaveStartMessage": "[S34_MEMORY_W3_REWORK_BUS_WARNING]"
+      }
+    },
+    {
+      "aliases": [
+        "Wave1EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "Wave2EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave3EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave4EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave5EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave6EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave7EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave8EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave9EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 144
+      }
+    },
+    {
+      "aliases": [
+        "Wave10EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 180
+      }
+    },
+    {
+      "aliases": [
+        "ProtectUmbrellas"
+      ],
+      "objclass": "ProtectThePlantChallengeProperties",
+      "objdata": {
+        "MustProtectCount": 2,
+        "Plants": [
+          {
+            "GridX": 1,
+            "GridY": 1,
+            "PlantType": "umbrellaleaf"
+          },
+          {
+            "GridX": 1,
+            "GridY": 3,
+            "PlantType": "umbrellaleaf"
+          }
+        ]
+      }
     }
   ]
 }

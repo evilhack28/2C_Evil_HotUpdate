@@ -23,7 +23,8 @@
           "RTID(SeedBank@CurrentLevel)",
           "RTID(ZombiesDeadWinCon@LevelModules)",
           "RTID(WaveModule@CurrentLevel)",
-          "RTID(SkySun@CurrentLevel)"
+          "RTID(SkySun@CurrentLevel)",
+          "RTID(LaneSliders@CurrentLevel)"
         ],
         "ShowZombies": [
           "tutorial",
@@ -117,7 +118,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave1EntryBand@CurrentLevel)"
       }
     },
     {
@@ -149,7 +150,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave2EntryBand@CurrentLevel)"
       }
     },
     {
@@ -191,7 +192,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave3EntryBand@CurrentLevel)"
       }
     },
     {
@@ -238,7 +239,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave4EntryBand@CurrentLevel)"
       }
     },
     {
@@ -305,7 +306,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave5EntryBand@CurrentLevel)"
       }
     },
     {
@@ -382,7 +383,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave6EntryBand@CurrentLevel)"
       }
     },
     {
@@ -469,7 +470,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave7EntryBand@CurrentLevel)"
       }
     },
     {
@@ -566,7 +567,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave8EntryBand@CurrentLevel)"
       }
     },
     {
@@ -678,7 +679,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave9EntryBand@CurrentLevel)"
       }
     },
     {
@@ -795,17 +796,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
-      }
-    },
-    {
-      "aliases": [
-        "Offsets"
-      ],
-      "objclass": "ZombieJitterOffsets",
-      "objdata": {
-        "ZombieSpawningOffsetIncrement": 48,
-        "ZombieSpawningRandomJitter": 8
+        "JitterOffsets": "RTID(Wave10EntryBand@CurrentLevel)"
       }
     },
     {
@@ -848,7 +839,7 @@
           ]
         ],
         "FlagWaveInterval": 4,
-        "SuppressFlagZombie": true,
+        "SuppressFlagZombie": false,
         "SuppressedDynamicZombieWaves": [
           0,
           1,
@@ -897,6 +888,126 @@
       "objclass": "StarChallengeZombieDistanceProps",
       "objdata": {
         "TargetDistance": 2.0
+      }
+    },
+    {
+      "aliases": [
+        "LaneSliders"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 5,
+            "GridY": 1,
+            "TypeName": "slider_down"
+          },
+          {
+            "GridX": 6,
+            "GridY": 3,
+            "TypeName": "slider_up"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "Wave2EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "Wave3EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave4EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave5EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave6EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave7EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 144
+      }
+    },
+    {
+      "aliases": [
+        "Wave8EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 144
+      }
+    },
+    {
+      "aliases": [
+        "Wave9EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 180
+      }
+    },
+    {
+      "aliases": [
+        "Wave10EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 180
       }
     }
   ]

@@ -23,7 +23,8 @@
           "RTID(SeedBank@CurrentLevel)",
           "RTID(ZombiesDeadWinCon@LevelModules)",
           "RTID(WaveModule@CurrentLevel)",
-          "RTID(SkySun@CurrentLevel)"
+          "RTID(SkySun@CurrentLevel)",
+          "RTID(FrontGold@CurrentLevel)"
         ],
         "ShowZombies": [
           "tutorial",
@@ -86,8 +87,33 @@
         "OverrideSeedSlotsCount": 8,
         "GlobalLevel": 1,
         "PresetPlantList": [
-          "jalapeno"
-        ]
+          "jalapeno",
+          "spikeweed",
+          "spikerock"
+        ],
+        "PlantBlackList": [
+          "birthsunflower",
+          "goldbloom",
+          "goldleaf",
+          "happyleek",
+          "minigame_imitater_sun",
+          "moonflower",
+          "moonflower_iz",
+          "oxygenalgae",
+          "parallel_moonflower",
+          "parallel_primalsunflower",
+          "parallel_sunflower",
+          "primalsunflower",
+          "shinevine",
+          "solarsage",
+          "sunbean",
+          "sunflower",
+          "sunflowerzombie",
+          "sunshroom",
+          "toadstool",
+          "twinsunflower"
+        ],
+        "BlackListLiftedBy": ""
       }
     },
     {
@@ -117,7 +143,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave1EntryBand@CurrentLevel)"
       }
     },
     {
@@ -149,7 +175,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave2EntryBand@CurrentLevel)"
       }
     },
     {
@@ -191,7 +217,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave3EntryBand@CurrentLevel)"
       }
     },
     {
@@ -214,7 +240,7 @@
           },
           {
             "Type": "RTID(sled@ZombieTypes)",
-            "Row": "3",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -238,7 +264,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave4EntryBand@CurrentLevel)"
       }
     },
     {
@@ -261,12 +287,7 @@
           },
           {
             "Type": "RTID(sled@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(sled@ZombieTypes)",
-            "Row": "5",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -310,7 +331,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave5EntryBand@CurrentLevel)"
       }
     },
     {
@@ -377,7 +398,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave6EntryBand@CurrentLevel)"
       }
     },
     {
@@ -390,12 +411,7 @@
         "Zombies": [
           {
             "Type": "RTID(sled@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(sled@ZombieTypes)",
-            "Row": "4",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -454,7 +470,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave7EntryBand@CurrentLevel)"
       }
     },
     {
@@ -477,7 +493,7 @@
           },
           {
             "Type": "RTID(sled@ZombieTypes)",
-            "Row": "3",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -546,7 +562,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave8EntryBand@CurrentLevel)"
       }
     },
     {
@@ -559,12 +575,7 @@
         "Zombies": [
           {
             "Type": "RTID(sled@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(sled@ZombieTypes)",
-            "Row": "5",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -648,7 +659,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(Wave9EntryBand@CurrentLevel)"
       }
     },
     {
@@ -661,12 +672,7 @@
         "Zombies": [
           {
             "Type": "RTID(sled@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(sled@ZombieTypes)",
-            "Row": "4",
+            "Row": "random",
             "Level": 1
           },
           {
@@ -750,17 +756,7 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
-      }
-    },
-    {
-      "aliases": [
-        "Offsets"
-      ],
-      "objclass": "ZombieJitterOffsets",
-      "objdata": {
-        "ZombieSpawningOffsetIncrement": 48,
-        "ZombieSpawningRandomJitter": 8
+        "JitterOffsets": "RTID(Wave10EntryBand@CurrentLevel)"
       }
     },
     {
@@ -772,10 +768,12 @@
         "WaveCount": 10,
         "Waves": [
           [
-            "RTID(Wave1@CurrentLevel)"
+            "RTID(Wave1@CurrentLevel)",
+            "RTID(GoldNotice@CurrentLevel)"
           ],
           [
-            "RTID(Wave2@CurrentLevel)"
+            "RTID(Wave2@CurrentLevel)",
+            "RTID(TireNotice@CurrentLevel)"
           ],
           [
             "RTID(Wave3@CurrentLevel)"
@@ -803,7 +801,7 @@
           ]
         ],
         "FlagWaveInterval": 4,
-        "SuppressFlagZombie": true,
+        "SuppressFlagZombie": false,
         "SuppressedDynamicZombieWaves": [
           0,
           1,
@@ -832,7 +830,7 @@
       "objclass": "PlantDefeatZombieChallengeProps",
       "objdata": {
         "PlantTypeName": "jalapeno",
-        "NumZombiesToKill": 14,
+        "NumZombiesToKill": 12,
         "Description": "[S34_MEMORY_W3_L6_GOAL_1]"
       }
     },
@@ -840,9 +838,9 @@
       "aliases": [
         "Goal2"
       ],
-      "objclass": "StarChallengeSunReducedProps",
+      "objclass": "StarChallengePlantsSurviveProps",
       "objdata": {
-        "sunModifier": 0.25
+        "Count": 15
       }
     },
     {
@@ -851,6 +849,187 @@
       ],
       "objclass": "StarChallengeSaveMowersProps",
       "objdata": {}
+    },
+    {
+      "aliases": [
+        "FrontGold"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 2,
+            "GridY": 0,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 2,
+            "GridY": 4,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 3,
+            "GridY": 3,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 5,
+            "GridY": 0,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 5,
+            "GridY": 4,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 2,
+            "GridY": 2,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "TypeName": "goldtile"
+          },
+          {
+            "GridX": 4,
+            "GridY": 3,
+            "TypeName": "goldtile"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "Wave2EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave3EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave4EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave5EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 72
+      }
+    },
+    {
+      "aliases": [
+        "Wave6EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave7EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 108
+      }
+    },
+    {
+      "aliases": [
+        "Wave8EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 144
+      }
+    },
+    {
+      "aliases": [
+        "Wave9EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 144
+      }
+    },
+    {
+      "aliases": [
+        "Wave10EntryBand"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 144
+      }
+    },
+    {
+      "aliases": [
+        "GoldNotice"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "GridTypes": [],
+        "SuppressActionIfNoGridItemsFound": false,
+        "ZombieSpawnWaitTime": 0,
+        "WaveStartMessage": "[S34_MEMORY_W3_L6_GOLD_NOTICE]"
+      }
+    },
+    {
+      "aliases": [
+        "TireNotice"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "GridTypes": [],
+        "SuppressActionIfNoGridItemsFound": false,
+        "ZombieSpawnWaitTime": 0,
+        "WaveStartMessage": "[S34_MEMORY_W3_L6_TIRE_NOTICE]"
+      }
     }
   ]
 }
