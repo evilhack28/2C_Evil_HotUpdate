@@ -262,7 +262,7 @@
                             {
                                 "From": "RTID(seagull@ZombieTypes)",
                                 "To": [
-                                    "RTID(modern_balloon@ZombieTypes)",
+                                    "RTID(seagull@ZombieTypes)",
                                     "RTID(seagull@ZombieTypes)"
                                 ]
                             }
@@ -274,7 +274,7 @@
                             {
                                 "From": "RTID(cannon@ZombieTypes)",
                                 "To": [
-                                    "RTID(lostcity_bug_armor2@ZombieTypes)",
+                                    "RTID(swashbuckler@ZombieTypes)",
                                     "RTID(cannon@ZombieTypes)",
                                     "RTID(cannon@ZombieTypes)"
                                 ]
@@ -290,8 +290,8 @@
                                 "From": "RTID(seagull@ZombieTypes)",
                                 "To": [
                                     "RTID(seagull@ZombieTypes)",
-                                    "RTID(modern_balloon@ZombieTypes)",
-                                    "RTID(lostcity_bug_armor2@ZombieTypes)",
+                                    "RTID(seagull@ZombieTypes)",
+                                    "RTID(swashbuckler@ZombieTypes)",
                                     "RTID(pelican@ZombieTypes)"
                                 ]
                             }
@@ -311,7 +311,7 @@
                             {
                                 "From": "RTID(seagull@ZombieTypes)",
                                 "To": [
-                                    "RTID(lostcity_bug_armor2@ZombieTypes)",
+                                    "RTID(swashbuckler@ZombieTypes)",
                                     "RTID(pelican@ZombieTypes)",
                                     "RTID(cannon@ZombieTypes)"
                                 ]
@@ -335,8 +335,8 @@
                         "StartingWave": 0,
                         "ZombiePool": [
                             "RTID(cannon@ZombieTypes)",
-                            "RTID(lostcity_bug_armor2@ZombieTypes)",
-                            "RTID(modern_balloon@ZombieTypes)",
+                            "RTID(swashbuckler@ZombieTypes)",
+                            "RTID(seagull@ZombieTypes)",
                             "RTID(swashbuckler@ZombieTypes)"                        
                         ]
                     }
